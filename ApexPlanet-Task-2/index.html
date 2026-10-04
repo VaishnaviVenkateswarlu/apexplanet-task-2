@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form and To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Web Page</h1>
+
+    <nav>
+        <a href="#contact">Contact</a>
+        <a href="#todo">To-Do List</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="contact">
+            <h2>Contact Form</h2>
+
+            <form id="contactForm">
+
+                <label>Name:</label>
+                <input type="text" id="name" required>
+
+                <label>Email:</label>
+                <input type="email" id="email" required>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+
+        <section id="todo">
+            <h2>To-Do List</h2>
+
+            <input type="text" id="taskInput" placeholder="Enter a task">
+
+            <button onclick="addTask()">Add Task</button>
+
+            <ul id="taskList"></ul>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
